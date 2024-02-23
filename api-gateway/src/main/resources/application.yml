@@ -9,17 +9,17 @@ spring:
     gateway:
       routes:
         - id: USUARIO-SERVICE
-          uri: lb://USUARIO-SERVICE
+          uri: lb//USUARIO-SERVICE
           predicates:
             - Path=/usuarios/**
 
         - id: HOTEL-SERVICE
-          uri: lb://HOTEL-SERVICE
+          uri: lb//HOTEL-SERVICE
           predicates:
             - Path=/hoteles/**
 
         - id: CALIFICACION-SERVICE
-          uri: lb://CALIFICACION-SERVICE
+          uri: lb//HOTEL-SERVICE
           predicates:
             - Path=/calificaciones/**
 
